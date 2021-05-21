@@ -16,6 +16,13 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.2",
     "husky": "^6.0.0",
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "lint-staged": "^11.0.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint",
+      "jest --findRelatedTests"
+    ]
   }
 }
